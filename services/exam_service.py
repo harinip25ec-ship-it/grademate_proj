@@ -32,6 +32,6 @@ def create_exam(teacher_id, title, subject, total_marks, question_paper_file, an
         print(f"Error creating exam: {e}")
         if qp_filename:
             os.remove(os.path.join(upload_folder, qp_filename))
-        if ak_filename:
+        if ak_filename: 
             os.remove(os.path.join(upload_folder, ak_filename))
-        return None 
+        return None  

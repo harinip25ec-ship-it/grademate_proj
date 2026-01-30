@@ -56,8 +56,8 @@ def get_user_by_email(email):
         return None
 
 def authenticate_user(email, password):
-    """Authenticate user against database""" 
+    """Authenticate user against database"""
     user = get_user_by_email(email) 
-    if user and user['password'] == password: 
+    if user and user['password'] == password:  
         return user
-    return None 
+    return None
