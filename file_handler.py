@@ -30,7 +30,7 @@ def save_uploaded_file(file, upload_folder, prefix=''):
         return filepath
     except Exception as e:
         print(f"Error saving file: {e}")
-        return None
+        return None 
     
 def cleanup_old_files(upload_folder, days=30):
     """optional; clean files older than X days"""
